@@ -95,3 +95,12 @@ body {
     background-color: #D4A373; 
     color: white;
 }
+.link-personalizado {
+    color: #291608;
+    text-decoration: none;
+}
+
+.link-personalizado:hover {
+    color: #D4A373;
+    text-decoration: underline;
+}
