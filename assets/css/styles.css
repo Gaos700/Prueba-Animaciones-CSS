@@ -1,5 +1,10 @@
+:root {
+    --bs-primary-rgb: 139, 94, 60; 
+}
 body {
   font-family: sans-serif;
+  background-color: #EAD7B7;
+  color: #333333;
 }
 
 .grid-container {
@@ -16,10 +21,13 @@ body {
 
 .nav-links li {
   padding: 0.5rem 0;
+  background-color: #8B5E3C;
+
 }
 
 .filters {
   grid-area: filters;
+  background-color: #D4A373;
 }
 
 .main {
@@ -27,7 +35,8 @@ body {
 }
 
 .footer {
-  background-color: #0f53b8;
+  background-color: #8B5E3C;
+  color: #fff;
 }
 
 .product-card {
@@ -36,6 +45,12 @@ body {
   padding: 1rem;
   background-color: #fff;
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
 }
 
 .product-card img {
@@ -69,4 +84,14 @@ body {
   .product-card img {
     max-width: 100%;
   }
+}
+.pagination .page-link {
+    color: #8B5E3C; 
+    border: 1px solid #D4A373; 
+    background-color: #FAF3E0; 
+    transition: all 0.3s ease;
+}
+.pagination .page-link:hover {
+    background-color: #D4A373; 
+    color: white;
 }
